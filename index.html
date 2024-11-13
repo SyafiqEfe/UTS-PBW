@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Portfolio Website Design</title>
+    <link rel="stylesheet" href="style.css" />
+    <!----Font awesome cdn  font icon css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="hero-header">
+      <div class="wrapper">
+        <header>
+          <div class="logo">
+            <i class="fa-solid fa-s"></i>
+            <div class="logo-text">Syafiq Efendi</div>
+          </div>
+          <nav>
+            <div class="togglebtn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <ul class="navlinks">
+              <li><a href="#">Home</a></li>
+              <li>
+                <a href="https://github.com/SyafiqEfe" target="_blank"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://wa.me/6285171126613?text=Halo%20saya%20tertarik%20untuk%20menghubungi%20Anda"
+                  target="_blank"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <div class="container">
+          <div class="hero-pic">
+            <img src="images/main_photo.jpg" alt="profile pic" />
+          </div>
+          <div class="hero-text">
+            <h5>Hi I'm <span class="input">UX Designer</span></h5>
+            <h1>Syafiq Efendi</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+              libero illo cumque ipsa, fuga tempore iste! Aliquam, odit
+              repellendus ipsam fugit error facilis ea suscipit omnis nemo
+              molestiae qui quidem.
+            </p>
+
+            <div class="btn-group">
+              <a href="#" class="btn active">Download CV</a>
+              <a
+                href="https://wa.me/6285171126613?text=Halo%20saya%20tertarik%20untuk%20menghubungi%20Anda"
+                class="btn whatsapp-btn"
+                target="_blank"
+                >WhatsApp</a
+              >
+            </div>
+
+            <div class="social">
+              <div class="social">
+                <a
+                  href="https://www.instagram.com/syfq_efe"
+                  class="instagram-link"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-instagram"></i
+                ></a>
+                <a
+                  href="https://wa.me/625171126613?text=Halo%20saya%20tertarik%20untuk%20menghubungi%20Anda"
+                  target="_blank"
+                  class="whatsapp-link"
+                  ><i class="fa-brands fa-whatsapp"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---typed js for typing text effect-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+      /** creating button click show hide navbar **/
+      var togglebtn = document.querySelector(".togglebtn");
+      var nav = document.querySelector(".navlinks");
+      var links = document.querySelector(".navlinks li");
+
+      togglebtn.addEventListener("click", function () {
+        this.classList.toggle("click");
+        nav.classList.toggle("open");
+      });
+
+      var typed = new Typed(".input", {
+        strings: ["UX Designer", "Mahasiswa Umsida"],
+        typedSpeed: 70,
+        backSpeed: 75,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
