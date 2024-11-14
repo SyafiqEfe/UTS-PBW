@@ -28,6 +28,8 @@
             </div>
             <ul class="navlinks">
               <li><a href="#">Home</a></li>
+              <li><a href="#projects">My Projects</a></li>
+              <li><a href="#skills">My Skills</a></li>
               <li>
                 <a href="https://github.com/SyafiqEfe" target="_blank"
                   >Portfolio</a
@@ -48,17 +50,20 @@
             <img src="images/main_photo.jpg" alt="profile pic" />
           </div>
           <div class="hero-text">
-            <h5>Hi I'm <span class="input">UX Designer</span></h5>
+            <h5>Hi I'm <span class="input">UI/UX Designer</span></h5>
             <h1>Syafiq Efendi</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
-              libero illo cumque ipsa, fuga tempore iste! Aliquam, odit
-              repellendus ipsam fugit error facilis ea suscipit omnis nemo
-              molestiae qui quidem.
+              Saya adalah Mahasiswa aktif pada program studi informatika
+              semester 3, Saya Tertarik pada pemodelan web dan UI/UX designer
             </p>
 
             <div class="btn-group">
-              <a href="#" class="btn active">Download CV</a>
+              <a
+                href="documents/CV_Syafiq Efendi.pdf"
+                class="btn active"
+                download
+                >Download CV</a
+              >
               <a
                 href="https://wa.me/6285171126613?text=Halo%20saya%20tertarik%20untuk%20menghubungi%20Anda"
                 class="btn whatsapp-btn"
@@ -68,30 +73,90 @@
             </div>
 
             <div class="social">
-              <div class="social">
-                <a
-                  href="https://www.instagram.com/syfq_efe"
-                  class="instagram-link"
-                  target="_blank"
-                >
-                  <i class="fa-brands fa-instagram"></i
-                ></a>
-                <a
-                  href="https://wa.me/625171126613?text=Halo%20saya%20tertarik%20untuk%20menghubungi%20Anda"
-                  target="_blank"
-                  class="whatsapp-link"
-                  ><i class="fa-brands fa-whatsapp"></i
-                ></a>
-              </div>
+              <a
+                href="https://www.instagram.com/syfq_efe"
+                class="instagram-link"
+                target="_blank"
+              >
+                <i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="https://wa.me/625171126613?text=Halo%20saya%20tertarik%20untuk%20menghubungi%20Anda"
+                target="_blank"
+                class="whatsapp-link"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/syafiq-efendi-026b58334?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank"
+                class="linkedin-link"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+
+              <a
+                href="https://twitter.com/Chilvroo"
+                target="_blank"
+                class="twitter-link"
+              >
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a
+                href="https://www.facebook.com/share/12AuoydmGda/"
+                target="_blank"
+                class="facebook-link"
+              >
+                <i class="fa-brands fa-facebook"></i>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!---typed js for typing text effect-->
+
+    <!-- My Projects Section -->
+    <section id="projects" class="section">
+      <div class="wrapper">
+        <h2>My Projects</h2>
+        <div class="projects-container">
+          <div class="project-card">
+            <img
+              src="images/my_project.png"
+              alt="Project 1 Image"
+              class="project-image"
+            />
+            <h3>Project 1</h3>
+            <p>Membuat web untuk film-film terbaru</p>
+          </div>
+          <div class="project-card">
+            <img
+              src="images/my_project 2.png"
+              alt="Project 2 Image"
+              class="project-image"
+            />
+            <h3>Project 2</h3>
+            <p>UI/UX meridesign aplikasi My umsida</p>
+          </div>
+          <!-- Add more project cards as needed -->
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="wrapper">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+          <div class="skill-item">HTML</div>
+          <div class="skill-item">CSS</div>
+          <div class="skill-item">JavaScript</div>
+          <div class="skill-item">UI/UX Design</div>
+          <!-- Add more skills as needed -->
+        </div>
+      </div>
+    </section>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
     <script>
-      /** creating button click show hide navbar **/
       var togglebtn = document.querySelector(".togglebtn");
       var nav = document.querySelector(".navlinks");
       var links = document.querySelector(".navlinks li");
@@ -102,8 +167,8 @@
       });
 
       var typed = new Typed(".input", {
-        strings: ["UX Designer", "Mahasiswa Umsida"],
-        typedSpeed: 70,
+        strings: ["UI/UX Designer", "Mahasiswa Umsida"],
+        typedSpeed: 80,
         backSpeed: 75,
         loop: true,
       });
